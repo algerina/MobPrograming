@@ -1,76 +1,55 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Plus Minus challenge
+Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with  places after the decimal.
 
-> One paragraph statement about the project.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
 
-![screenshot](./app_screenshot.png)
+Example
 
-Additional description about the project and its features.
+There are  elements, two positive, two negative and one zero. Their ratios are ,  and . Results are printed as:
 
-## Built With
+0.400000
+0.400000
+0.200000
+Function Description
 
-- Major languages
-- Frameworks
-- Technologies used
+Complete the plusMinus function in the editor below.
 
-## Live Demo
+plusMinus has the following parameter(s):
 
-[Live Demo Link](https://livedemo.com)
+int arr[n]: an array of integers
+Print
+Print the ratios of positive, negative and zero values in the array. Each value should be printed on a separate line with  digits after the decimal. The function should not return a value.
 
+Input Format
 
-## Getting Started
+The first line contains an integer, , the size of the array.
+The second line contains  space-separated integers that describe .
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+Constraints
 
 
 
-## Authors
+Output Format
 
-👤 **Author1**
+Print the following  lines, each to  decimals:
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+proportion of positive values
+proportion of negative values
+proportion of zeros
+Sample Input
 
-👤 **Author2**
+STDIN           Function
+-----           --------
+6               arr[] size n = 6
+-4 3 -9 0 4 1   arr = [-4, 3, -9, 0, 4, 1]
+Sample Output
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+0.500000
+0.333333
+0.166667
+Explanation
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+There are  positive numbers,  negative numbers, and  zero in the array.
+The proportions of occurrence are positive: , negative:  and zeros: .
